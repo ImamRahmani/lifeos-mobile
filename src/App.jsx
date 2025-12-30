@@ -370,7 +370,7 @@ const CyberModule = ({ updateStreak, setTodayTask }) => {
       <div className="flex justify-between items-center px-1">
         <h2 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
           <Shield className="text-indigo-500 fill-indigo-100" /> 
-          Cyber Path
+          Goals Path
         </h2>
         {!isEditingGoal && (
             <button 
