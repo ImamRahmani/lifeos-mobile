@@ -4,7 +4,6 @@ import {
   Dumbbell, 
   Wallet, 
   CheckCircle2, 
-  Circle,
   Home, 
   Plus, 
   Trash2, 
@@ -12,22 +11,17 @@ import {
   TrendingUp, 
   TrendingDown, 
   Edit3,
-  Target,
   Zap,
   Calendar,
-  Clock,
   ChevronDown,
   ChevronUp,
   AlertCircle,
   X,
-  Filter,
-  Save,
   ArrowLeft,
   Settings,
   Download,
   Upload,
-  FileJson,
-  RotateCcw
+  Target
 } from 'lucide-react';
 
 // --- Utility Components ---
@@ -595,7 +589,8 @@ const GymModule = () => {
           </div>
         </Card>
       ) : (
-        <Card className="bg-emerald-500 text-white shadow-emerald-200 shadow-xl border-none relative overflow-hidden min-h-[200px] flex flex-col justify-center">
+        // Di sini PERUBAHANNYA: Menggunakan div, bukan Card, agar warna hijau tidak tertimpa putih.
+        <div className="bg-emerald-500 rounded-2xl p-5 text-white shadow-emerald-200 shadow-xl relative overflow-hidden min-h-[200px] flex flex-col justify-center transition-all hover:shadow-2xl">
             {/* Pattern */}
            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
            
@@ -624,7 +619,7 @@ const GymModule = () => {
                    </ul>
                </div>
            </div>
-        </Card>
+        </div>
       )}
 
       {/* Day Selector */}
